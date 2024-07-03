@@ -1,0 +1,183 @@
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./img/desert-5112222_1920.png);
+    margin:0;
+}
+
+
+canvas{
+    background-color:black;
+    z-index: 1000; 
+    display:block;
+
+}
+
+@media only screen and (max-width:720px){
+    canvas {
+        width:100%;
+    }
+
+    h1{
+        display:none;
+    }
+
+
+}
+
+@media only screen and (max-height:480px) {
+    canvas {
+        height: 100vh;
+    }
+
+}
+
+.startAndDescription{
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    margin-top:20px;
+    align-items: center;
+}
+
+.startButton {
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 10px;
+    height: 50px;
+    width: 175px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: orange;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 420px;
+    left:70px;
+}
+
+.gameInfoButton{
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 10px;
+    height: 50px;
+    width: 175px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: orange;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 420px;
+    left:275px;
+}
+
+.legalNoticeButton{
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    width: 175px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background-color: orange;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 420px;
+    left:500px;
+}
+
+.howToPlayButton{
+    height: 45px;
+    width: 250px;
+    background-color: orange;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    font-size:25px;
+}
+
+.startButton:hover {
+    transform: scale(1.1);
+}
+
+.gameInfoButton:hover{
+    transform: scale(1.1);
+}
+
+.howToPlayButton:hover {
+    transform: scale(1.1);
+}
+
+.canvasDiv {
+    position: relative; /* Wichtig für die Positionierung der Buttons */
+}
+
+.muteButton{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(255, 89, 0);
+    border-radius: 10px;
+    right: 60px;
+    top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.muteButton:hover{
+    transform: scale(1.1);
+}
+
+.speakerButton{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(255, 89, 0);
+    border-radius: 10px;
+    right: 60px;
+    top: 10px;
+    transition: transform 0.3s ease;
+    display: none;  
+}
+
+.fullScreen,
+.exitFullScreenButton {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 89, 0);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.fullScreen:hover,
+.exitFullScreenButton:hover {
+    transform: scale(1.1);
+}
+
+.d-none{
+    display:none;
+}
+
+.d-block{
+    display:block;
+}
+
+.howToPlayDiv{
+    font-size: 20px;
+    width:720px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}

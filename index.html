@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pollo Loco</title>
+    <link rel="icon" type="image/x-icon" href="./img/2_character_pepe/2_walk/W-21.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="models/drawable-object.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/chicken_small.class.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/status.bar.class.js"></script>
+    <script src="models/Bottle-Bar.class.js"></script>
+    <script src="models/coin-Bar.class.js"></script>
+    <script src="models/EndBoss-Bar.class.js"></script>
+    <script src="models/background-object.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="models/thorwable-object.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="models/bottels.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="./js/game.js"></script>
+</head>
+<body onload="init()">
+    <h1>El Pollo Loco</h1>
+    <div id="canvasDiv" class="canvasDiv">
+        <canvas id="canvas" width="720" height="480"></canvas>
+        <img onclick="muteSound()" id="muteButton" class="muteButton" src="./img/mute.png">
+        <img onclick="unmuteSound()" id="speakerButton" class="speakerButton" src="./img/speaker-filled-audio-tool.png">
+        <img onclick="fullscreen()" id="fullScrenButton" class="fullScreen" src="./img/maximize.png" alt="Enter Fullscreen">
+        <img onclick="closeFullscreen()" id="exitFullScreenButton" class="exitFullScreenButton" src="./img/minimize.png" alt="Exit Fullscreen" style="display: none;">
+        <button onclick="startGame()" id="startButton" class="startButton">START</button>
+        <button id="gameInfoButton" class="gameInfoButton">GameInfo</button>
+        <button id="legalNotice" class="legalNoticeButton">Legal Notice</button>
+        </div>
+
+<div id="startAndDescription" class="startAndDescription">
+
+</div>
+</body>
+</html>
